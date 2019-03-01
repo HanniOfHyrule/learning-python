@@ -8,6 +8,7 @@ def find_greeting(name):
     else:
         print( "Hello " + name + ", nice to meet you!")
 
-while True:
-    myname = input("What is your Name? ")
-    find_greeting(myname)
+names = ["Johanna", "Felix", "Dominik", "Zoe"]
+
+for name in names:
+    find_greeting(name)
