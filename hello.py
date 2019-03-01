@@ -8,7 +8,7 @@ def find_greeting(name):
     else:
         print( "Hello " + name + ", nice to meet you!")
 
-names = ["Johanna", "Felix", "Dominik", "Zoe"]
-
-for name in names:
-    find_greeting(name)
+with open("names.txt", "rU") as f:
+    for line in f:
+        find_greeting(line.rstrip())
+ 
