@@ -9,7 +9,7 @@ def encrypt(char,key):
         if encrypted >122:
             return chr(encrypted - 122 + 65 -1)
         else:
-            return chr(ord(char) + key)
+            return chr(encrypted)
     else:
         return char
 
