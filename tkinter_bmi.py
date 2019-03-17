@@ -30,8 +30,17 @@ class Application(tk.Frame):
     def calculate(self):
         weight=float(self.input_weight.get())
         height=float(self.input_height.get())
+        
+        if height > 3: 
+            height=height /100
+
         bmi=weight/(height*height)
-        self.output["text"] = bmi
+        bmi=round(number=bmi, ndigits=0)
+        self.output["text"] = int(bmi)
+        if bmi <=24:
+            self.output.configure(background='green')
+        else:
+            self.output.configure(background='red')
 
 root = tk.Tk()
 app = Application(master=root)
