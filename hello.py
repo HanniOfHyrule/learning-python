@@ -1,8 +1,8 @@
 def find_greeting(name):
     if name == "Felix":
-        print("Hello Felix, wahhhhhhh")
+        print("Hello Felix")
     elif name == "Dominik":
-        print("Hello Dominik, i love you. You are amazing")
+        print("Hello Dominik, you are amazing")
     elif name == "Johanna":
         print("Hello Johanna, how are you?")
     else:
